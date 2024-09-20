@@ -4,74 +4,75 @@
 <title>Your Name - Resume</title>
 <style>
 body {
-  font-family: Arial, sans-serif;
-  margin: 20px;
+    font-family: Arial, sans-serif;
+    margin: 20px;
 }
 
 .container {
-  max-width: 800px;
-  margin: 0 auto;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .section {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .section-title {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Ensures padding and border are included in the total width */
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 </style>
 </head>
 <body>
 <div class="container">
 
-  <h1>Your Name</h1>
-  <h2>Your Job Title</h2>
+    <h1><input type="text" placeholder="Your Name"></h1>
+    <h2><input type="text" placeholder="Your Job Title"></h2>
 
-  <div class="section">
-    <h3 class="section-title">Contact Information</h3>
-    <p>Email: your.email@example.com</p>
-    <p>Phone: +1 (123) 456-7890</p>
-    <p>LinkedIn: linkedin.com/in/yourprofile</p>
-  </div>
+    <div class="section">
+        <h3 class="section-title">Contact Information</h3>
+        <p>Email: <input type="email" placeholder="your.email@example.com"></p>
+        <p>Phone: <input type="tel" placeholder="+1 (123) 456-7890"></p>
+        <p>LinkedIn: <input type="text" placeholder="linkedin.com/in/yourprofile"></p>
+    </div>
 
-  <div class="section">
-    <h3 class="section-title">Summary</h3>
-    <p>A brief summary of your skills and experience.</p>
-  </div>
+    <div class="section">
+        <h3 class="section-title">Summary</h3>
+        <textarea placeholder="A brief summary of your skills and experience."></textarea>
+    </div>
 
-  <div class="section">
-    <h3 class="section-title">Work Experience</h3>
-    <ul>
-      <li>
-        <h4>Job Title at Company</h4>
-        <p>Dates: Start Date - End Date</p>
-        <ul>
-          <li>Key responsibilities and achievements</li>
-        </ul>
-      </li>
-      </ul>
-  </div>
+    <div class="section">
+        <h3 class="section-title">Work Experience</h3>
+        <textarea placeholder="List your work experience here, including job titles, companies, dates, and key responsibilities."></textarea>
+    </div>
 
-  <div class="section">
-    <h3 class="section-title">Education</h3>
-    <ul>
-      <li>
-        <h4>Degree, University/School</h4>
-        <p>Dates: Start Date - End Date</p>
-      </li>
-    </ul>
-  </div>
+    <div class="section">
+        <h3 class="section-title">Education</h3>
+        <textarea placeholder="List your educational background here, including degrees, institutions, and dates."></textarea>
+    </div>
 
-  <div class="section">
-    <h3 class="section-title">Skills</h3>
-    <ul>
-      <li>Skill 1</li>
-      <li>Skill 2</li>
-    </ul>
-  </div>
+    <div class="section">
+        <h3 class="section-title">Skills</h3>
+        <textarea placeholder="List your skills here, separated by commas."></textarea>
+    </div>
 
 </div>
 </body>
